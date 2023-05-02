@@ -1,0 +1,643 @@
+{
+	"info": {
+		"_postman_id": "80e39b13-d1d5-4027-9fc4-2628b50f405d",
+		"name": "VSR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11366591",
+		"_collection_link": "https://grey-crescent-136843.postman.co/workspace/VSR~419e8b14-61e6-4e84-b0ba-4a246c085970/collection/11366591-80e39b13-d1d5-4027-9fc4-2628b50f405d?action=share&creator=11366591&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "GetVolumeStatus",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.1.108:4443/api/v1/value1/GetVolumeStatus",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v1",
+						"value1",
+						"GetVolumeStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllDrives",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v1/value1/GetAllDrives",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v1",
+						"value1",
+						"GetAllDrives"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJobProgress",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v1/value1/GetJobProgress",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v1",
+						"value1",
+						"GetJobProgress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecoveryPoints",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v1/value1/GetRecoveryPoints",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v1",
+						"value1",
+						"GetRecoveryPoints"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RestoreDataDrive",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"targetdrive\":\"C\",\r\n\"v2ipath\":\"D:\\\\Test backup\\\\DEMOO\",\r\n\"v2ipassword\":\"qwerty12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v1/value1/RestoreDataDrive",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v1",
+						"value1",
+						"RestoreDataDrive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete the backup jobs configured",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n“JobID”:”55E07F4D-1E63-4A1E-B384-37DE200DA7CB”\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v1/value1/DeleteBackupJob",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v1",
+						"value1",
+						"DeleteBackupJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Backup Job",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"drives\":\"D\",\r\n\"destpath\":\"D://DEMOO/\",\r\n\"Networkusername\":\"\",\r\n\"Networkpassword\":\"\",\r\n\"Compression\":\"High\",\r\n\"RetentionLimit\":2,\r\n\"spansizeinMB\":100,\r\n\"imgPassword\":\"qwerty12\",\r\n\"imgPasswordEncryption\":\"Standard”\",\r\n\"Scheduling\":\"No\",\r\n\"Date_Time\":\"19-04-2023 17:00\",\r\n\"DayOfWeek\":\"\",\r\n\"Base_Interval\":\"\",\r\n\"BaseDayOfWeek\":\"\",\r\n\"BaseDate_Time\":\"\",\r\n\"BaseDayOfMonth\":\"\",\r\n\"RunMorethanOncePerDay\":\"False\",\r\n\"TimeBetweenBackups\":\"20\",\r\n\"NoOfTimes\": 2,\r\n\"ConsolidateFrequency\":\"Never\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.1.108:4443/api/v2/value2/CreateBackupJob",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v2",
+						"value2",
+						"CreateBackupJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit RPS Backup Job",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"drives\":\"E\",\r\n\"destpath\":\"D://Test backup/\",\r\n\"Networkusername\":\"\",\r\n\"Networkpassword\":\"\",\r\n\"Compression\":\"None\",\r\n\"RetentionLimit\":2,\r\n\"spansizeinMB\":100,\r\n\"imgPassword\":\"qwerty12\",\r\n\"imgPasswordEncryption\":\"Standard”\",\r\n\"Scheduling\":\"No\",\r\n\"Date_Time\":\"19-04-2023 17:00\",\r\n\"DayOfWeek\":\"\",\r\n\"Base_Interval\":\"\",\r\n\"BaseDayOfWeek\":\"\",\r\n\"BaseDate_Time\":\"\",\r\n\"BaseDayOfMonth\":\"\",\r\n\"RunMorethanOncePerDay\":\"False\",\r\n\"TimeBetweenBackups\":\"20\",\r\n\"NoOfTimes\": 2,\r\n\"ConsolidateFrequency\":\"Never\",\r\n\"ImageJobID\":\"B52CC0E4-A8BE-4715-83D6-B09FAE2271BA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v2/value2/CreateBackupJob",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v2",
+						"value2",
+						"CreateBackupJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReApply Job",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\"drives\":\"E\",\r\n\"destpath\":\"D://Test backup/\",\r\n\"Networkusername\":\"\",\r\n\"Networkpassword\":\"\",\r\n\"Compression\":\"None\",\r\n\"RetentionLimit\":2,\r\n\"spansizeinMB\":100,\r\n\"imgPassword\":\"qwerty12\",\r\n\"imgPasswordEncryption\":\"Standard”\",\r\n\"Scheduling\":\"No\",\r\n\"Date_Time\":\"19-04-2023 15:00\",\r\n\"DayOfWeek\":\"\",\r\n\"Base_Interval\":\"\",\r\n\"BaseDayOfWeek\":\"\",\r\n\"BaseDate_Time\":\"\",\r\n\"BaseDayOfMonth\":\"\",\r\n\"RunMorethanOncePerDay\":\"False\",\r\n\"TimeBetweenBackups\":\"20\",\r\n\"NoOfTimes\": 2,\r\n\"ConsolidateFrequency\":\"Never\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v2/value2/ReApply",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v2",
+						"value2",
+						"ReApply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Independent Create Backup Job",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"drives\":\"E\",\r\n\"destpath\":\"D://Test backup/\",\r\n\"Networkusername\":\"\",\r\n\"Networkpassword\":\"\",\r\n\"Compression\":\"None\",\r\n\"RetentionLimit\":2,\r\n\"spansizeinMB\":100,\r\n\"imgPassword\":\"qwerty12\",\r\n\"imgPasswordEncryption\":\"Standard”\",\r\n\"Scheduling\":\"No\",\r\n\"Date_Time\":\"19-04-2023 17:00\",\r\n\"DayOfWeek\":\"\",\r\n\"DayOfMonth\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v2/value2/CreateIndependentBackupjob",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v2",
+						"value2",
+						"CreateIndependentBackupjob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Independent Backup Job",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"drives\":\"E\",\r\n\"destpath\":\"D://Test backup/\",\r\n\"Networkusername\":\"\",\r\n\"Networkpassword\":\"\",\r\n\"Compression\":\"High\",\r\n\"RetentionLimit\":2,\r\n\"spansizeinMB\":100,\r\n\"imgPassword\":\"qwerty12\",\r\n\"imgPasswordEncryption\":\"Standard”\",\r\n\"Scheduling\":\"No\",\r\n\"Date_Time\":\"19-04-2023 15:00\",\r\n\"DayOfWeek\":\"\",\r\n\"DayOfMonth\":\"\",\r\n\"ImageJobID\":\"75797A13-A5B1-4684-8EBC-BE30DB913612\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v2/value2/CreateIndependentBackupjob",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v2",
+						"value2",
+						"CreateIndependentBackupjob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Version2 Run Backup Job",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"JobID\":\"55E07F4D-1E63-4A1E-B384-37DE200DA7CB\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.1.108:4443/api/v2/value2/RunBackupJob",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v2",
+						"value2",
+						"RunBackupJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Backup Jobs",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://127.0.0.1:4443/api/v2/value2/DeleteAllBackupJobs",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v2",
+						"value2",
+						"DeleteAllBackupJobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Backup Jobs",
+			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": [
+						{
+							"key": "password",
+							"value": "Dadapeer@1996",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Microsoft",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.1.109:4443/api/v2/value2/GetBackupJobs",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"109"
+					],
+					"port": "4443",
+					"path": [
+						"api",
+						"v2",
+						"value2",
+						"GetBackupJobs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
